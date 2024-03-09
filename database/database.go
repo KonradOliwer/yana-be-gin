@@ -36,8 +36,7 @@ func InitialiseDatabase(migrationFolder string) (*sql.DB, error) {
 		return nil, err
 	}
 
-	createDbIfNotExists(db, operationDbName)
-	//TODO connect to new DB - that makes sense only when createDbIfNotExists will be implemented
+	//TODO create db if not exists and then connect to new db and close old connection
 
 	err = migrate(db, migrationFolder)
 	if err != nil {
@@ -67,10 +66,6 @@ func initialiseDatabaseConnection(connection ConnectionData) (*sql.DB, error) {
 	}
 	fmt.Println("Successfully connected!")
 	return db, nil
-}
-
-func createDbIfNotExists(db *sql.DB, name string) {
-	//TODO: implement; we work with assumption that db already exists
 }
 
 func migrate(db *sql.DB, migrationFolder string) error {
