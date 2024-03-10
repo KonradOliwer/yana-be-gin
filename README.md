@@ -3,7 +3,7 @@ ___
 This is learning project. So take everything with grain of salt and don't emulate things without a thought.
 
 This is [go](https://go.dev/) + [gin](https://gin-gonic.com/) implementation of backend
-For more details about project read frontend [README.md](README.md)
+For more details about project read frontend [README.md](https://github.com/KonradOliwer/yana-fe-react/)
 
 
 ### TODO for production ready
