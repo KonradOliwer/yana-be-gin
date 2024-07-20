@@ -2,8 +2,9 @@
 ___
 This is learning project. So take everything with grain of salt and don't emulate things without a thought.
 
-This is [go](https://go.dev/) + [gin](https://gin-gonic.com/) implementation of backend
-For more details about project read frontend [README.md](https://github.com/KonradOliwer/yana-fe-react/)
+This is [go](https://go.dev/) + [gin](https://gin-gonic.com/) implementation of backend.
+For more details about project read frontend [README.md](https://github.com/KonradOliwer/yana-fe-react/).
+Make sure to use same tag version for frontend and backend to ensure compatibility.
 
 
 ### TODO for production ready
@@ -16,9 +17,9 @@ If we want higher level of security we might want to look for more sophisticated
 - [docker](https://www.docker.com/)
 ### Running
 Start db (this will drop DB on finishing process)
-```bash
+**```bash
 docker run --name postgres -e POSTGRES_PASSWORD=password -e POSTGRES_USER=user -e POSTGRES_DB=yana -p 5432:5432 --rm postgres
-```
+```**
 
 Run with debug mode
 ```bash
